@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby + Netlify CMS Starter',
+    title: 'drankoceanic',
     description:
-      'This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.',
+      'Drank Oceanic aka Natalie Tarle is a Melbourne based designer primarily focussed on fashion and digital representations of it',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
