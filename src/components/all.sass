@@ -1,14 +1,27 @@
 @import "~bulma/sass/utilities/initial-variables"
 
 // Config vars
-// Kaldi logo brand color: #FD461E
-$kaldi-red: #D64000
-$kaldi-red-invert: #fff
+$drank-blue: #0B89FF
+$drank-blue-invert: #fff
 
-$primary: $kaldi-red
-$primary-invert: $kaldi-red-invert
-$body-color: #333
-$black: #2b2523
+$primary: $drank-blue
+$primary-invert: $drank-blue-invert
+$body-color: #000000
+$black: #000000
+
+.layout-root              
+  display: flex
+  height: 100vh
+  justify-content: center
+
+.layout-child-root
+  display: flex
+  justify-content: center
+  align-items: center
+  flex: 1 1 0
+
+nav
+  flex: 1 1 0
 
 .navbar .navbar-menu
   box-shadow:none !important
@@ -61,10 +74,10 @@ $black: #2b2523
     border-radius: .25rem
     text-decoration: none
     font-weight: 700
-    color: #CC3700
+    color: $drank-blue
     text-align: center
-    -webkit-box-shadow: inset 0 0 0 2px #CC3700
-    box-shadow: inset 0 0 0 2px #f40
+    -webkit-box-shadow: inset 0 0 0 2px $drank-blue
+    box-shadow: inset 0 0 0 2px $drank-blue
     -webkit-transition: all .15s ease
     transition: all .15s ease
 
@@ -84,13 +97,20 @@ footer.footer
   padding: 3rem 0rem 0rem
   background-color: transparent
 
+.navbar-item img
+  max-height: none !important
+
+.navbar-start
+  flex-direction: column;
+  justify-content: center !important;
+
 //Menu overrides
 $menu-item-color: $white-ter
 $menu-item-hover-color: $black !important
 $menu-item-hover-background-color: $black
-$menu-item-active-color: $kaldi-red-invert
-$menu-item-active-background-color:	$kaldi-red-invert
-$menu-list-border-left: 1px solid $kaldi-red-invert
+$menu-item-active-color: $drank-blue
+$menu-item-active-background-color:	$drank-blue
+$menu-list-border-left: 1px solid $drank-blue
 $menu-label-color: $white-ter
 
 
