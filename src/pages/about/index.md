@@ -11,4 +11,4 @@ Her collaborative project ‘Kid Drank’ can be found [@kid___drank](https://ww
 \
 Instagram, Vimeo can be found [@drankoceanic](https://www.instagram.com/drankoceanic/).\
 \
-To contact, click [here](drankoceanic.com/contact).
+To contact, click [here](https://www.drankoceanic.com/contact).
