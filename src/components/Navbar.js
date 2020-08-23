@@ -4,8 +4,8 @@ import logo from '../img/drankoceanic-girl.svg'
 
 const Navbar = class extends React.Component {
   getNavItemClass = (path) => {
-    console.log(window.location.pathname)
-    if (window.location.pathname === path) {
+    windowPath = typeof window !== 'undefined' ? window.location.pathname : '';
+    if (windowPath === path) {
       return 'nav_item active'
     } else {
       return 'nav_item'
