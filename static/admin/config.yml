@@ -62,7 +62,7 @@ collections:
         name: "wear"
         fields:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "wear-page"}
-          - {label: Intro, name: intro, widget: object, fields: [{label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}, {label: "Publish Date", name: "date", widget: "datetime"}]}]}
+          - {label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Title, name: title, widget: string}, {label: Description, name: description, widget: text}, {label: "Publish Date", name: "date", widget: "datetime"}]}
       - file: "src/pages/explore/index.md"
         label: "Explore"
         name: "explore"
