@@ -3,14 +3,6 @@ import React from 'react'
 import logo from '../img/drankoceanic-girl.svg'
 
 const Navbar = class extends React.Component {
-  getNavItemClass = (path) => {
-    windowPath = typeof window !== 'undefined' ? window.location.pathname : '';
-    if (windowPath === path) {
-      return 'nav_item active'
-    } else {
-      return 'nav_item'
-    }
-  };
   render() {
     return (
       <nav
@@ -29,16 +21,16 @@ const Navbar = class extends React.Component {
             id="nav-menu" className='container nav_menu'
           >
             <div>
-              <Link className={this.getNavItemClass('/about')} to="/about">
+              <Link className='nav_item' activeClassName="active" to="/about">
                 about
               </Link>
-              <Link className={this.getNavItemClass('/explore')} to="/explore">
+              <Link className='nav_item' activeClassName="active" to="/explore">
                 explore
               </Link>
-              <Link className={this.getNavItemClass('/wear')} to="/wear">
+              <Link className='nav_item' activeClassName="active" to="/wear">
                 wear
               </Link>
-              <Link className={this.getNavItemClass('/contact')} to="/contact">
+              <Link className='nav_item' activeClassName="active" to="/contact">
                 contact
               </Link>
             </div>
