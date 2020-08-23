@@ -4,7 +4,8 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import { graphql } from 'gatsby'
 
-export const WearPageTemplate = ({ blurbs }) => {
+export const ExplorePageTemplate = ({ blurbs }) => {
+  console.log(blurbs)
   return (
     <section className="section section--gradient">
       <div className="container">
@@ -30,23 +31,23 @@ export const WearPageTemplate = ({ blurbs }) => {
   )
 }
 
-WearPageTemplate.propTypes = {
+ExplorePageTemplate.propTypes = {
   blurbs: PropTypes.array,
 }
 
-const WearPage = ({ data }) => {
+const ExplorePage = ({ data }) => {
   const { frontmatter } = data.markdownRemark
 
   return (
     <Layout>
-      <WearPageTemplate
+      <ExplorePageTemplate
         blurbs={frontmatter.blurbs}
       />
     </Layout>
   )
 }
 
-WearPage.propTypes = {
+ExplorePage.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.shape({
       frontmatter: PropTypes.object,
@@ -54,11 +55,11 @@ WearPage.propTypes = {
   }),
 }
 
-export default WearPage
+export default ExplorePage
 
-export const wearPageQuery = graphql`
-  query WearPage {
-    markdownRemark(frontmatter: { templateKey: { eq: "wear-page" } }) {
+export const explorePageQuery = graphql`
+  query ExplorePage {
+    markdownRemark(frontmatter: { templateKey: { eq: "explore-page" } }) {
       frontmatter {
         blurbs {
           image {
