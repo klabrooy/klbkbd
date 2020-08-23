@@ -1,75 +1,44 @@
 import { Link } from 'gatsby'
 import React from 'react'
-import github from '../img/github-icon.svg'
 import logo from '../img/drankoceanic-girl.svg'
 
 const Navbar = class extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      active: false,
-      navBarActiveClass: '',
+  getNavItemClass = (path) => {
+    console.log(window.location.pathname)
+    if (window.location.pathname === path) {
+      return 'nav_item active'
+    } else {
+      return 'nav_item'
     }
-  }
-
-  toggleHamburger = () => {
-    // toggle the active boolean in the state
-    this.setState(
-      {
-        active: !this.state.active,
-      },
-      // after state has been updated,
-      () => {
-        // set the class in state for the navbar accordingly
-        this.state.active
-          ? this.setState({
-              navBarActiveClass: 'is-active',
-            })
-          : this.setState({
-              navBarActiveClass: '',
-            })
-      }
-    )
-  }
-
+  };
   render() {
     return (
       <nav
-        className="navbar is-transparent"
+        id='nav'
         role="navigation"
         aria-label="main-navigation"
+        className='container nav'
       >
-        <div className="container">
-          <div className="navbar-brand">
-            <Link to="/" className="navbar-item" title="Logo">
-              <img src={logo} alt="drankoceanic girl" style={{ width: '250px' }} />
+        <div className='nav_content'>
+          <div id="nav-logo" className='container'>
+            <Link to="/" className="nav_item" title="Logo">
+              <img src={logo} alt="drankoceanic girl" style={{ width: '300px' }} />
             </Link>
-            {/* Hamburger menu */}
-            <div
-              className={`navbar-burger burger ${this.state.navBarActiveClass}`}
-              data-target="navMenu"
-              onClick={() => this.toggleHamburger()}
-            >
-              <span />
-              <span />
-              <span />
-            </div>
           </div>
           <div
-            id="navMenu"
-            className={`navbar-menu ${this.state.navBarActiveClass}`}
+            id="nav-menu" className='container nav_menu'
           >
-            <div className="navbar-start has-text-centered">
-              <Link className="navbar-item" to="/about">
+            <div>
+              <Link className={this.getNavItemClass('/about')} to="/about">
                 about
               </Link>
-              <Link className="navbar-item" to="/explore">
+              <Link className={this.getNavItemClass('/explore')} to="/explore">
                 explore
               </Link>
-              <Link className="navbar-item" to="/wear">
+              <Link className={this.getNavItemClass('/wear')} to="/wear">
                 wear
               </Link>
-              <Link className="navbar-item" to="/contact">
+              <Link className={this.getNavItemClass('/contact')} to="/contact">
                 contact
               </Link>
             </div>

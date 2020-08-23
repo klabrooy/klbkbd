@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,700&display=swap');
+
+
+$drank-blue: #0B89FF;
+$drank-blue-invert: #fff;
+
+$primary: $drank-blue;
+$primary-invert: $drank-blue-invert;
+$body-color: #000000;
+$black: #000000;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+
+$font-body: 'Roboto', sans-serif;
+$font-accent: 'Noto Serif', serif;
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin scrollbar {
+  &::-webkit-scrollbar {
+    width: 5px !important;
+    height: 6px !important
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $drank-blue !important
+  }
+}
+
+html {
+  font-family: $font-body;
+  body {
+    margin: 0
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $drank-blue;
+  &:visited {
+    color: $black
+  }
+  &:hover {
+    color: $drank-blue
+  }
+}
+
+.container {
+  flex: 1 1 0
+}
+
+.layout-root {              
+  display: flex;
+  height: calc(100vh - 32px);
+  margin: 16px;
+  justify-content: center;
+  flex-direction: column;
+  @include tablet() {
+    flex-direction: row;
+  }
+  @include desktop() {
+    flex-direction: row;
+  }
+}
+
+.layout-child-root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 0;
+  section {
+    max-height: 100vh;
+    overflow-y: auto;
+    margin: 0 16px;
+    @include scrollbar()
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &_content {
+    height: fit-content;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+  }
+  &_menu {
+    display: flex;
+    align-items: flex-end;
+    width: 70px;
+    margin-left: 16px;
+    div {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  &_item.active {
+    font-family: $font-accent;
+  }
+}
+
+.content .taglist {
+  list-style: none;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 1.5rem;
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: center;
+  li {
+    padding: 0 2rem 1rem 0;
+    margin-bottom: 1.5rem;
+    margin-top: 0;
+  }
+}
+
+// Helper Classes
+.full-width-image-container {
+  width: 100vw;
+  height: 400px;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin: 2em -50vw;
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.full-width-image {
+    width: 100vw;
+    height: 400px;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 16px 10px;
+    font-size: 18px;
+    font-size: 1rem;
+    line-height: 1.25;
+    background-color: #fff;
+    border-radius: .25rem;
+    text-decoration: none;
+    font-weight: 700;
+    color: $drank-blue;
+    text-align: center;
+    -webkit-box-shadow: inset 0 0 0 2px $drank-blue;
+    box-shadow: inset 0 0 0 2px $drank-blue;
+    -webkit-transition: all .15s ease;
+    transition: all .15s ease;
+}
+
+.margin-top-0 {
+  margin-top: 0 !important;
+}
+
+.navbar-item .icon {
+  color: $primary
+// Override for use of svg's from https://simpleicons.org/
+}
+.icon svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: currentColor;
+}
+.navbar-brand .navbar-item.logo {
+  padding: 0 1rem;
+}
+footer.footer {
+  padding: 3rem 0rem 0rem;
+  background-color: transparent;
+}
+
+.navbar-item img {
+  max-height: none !important;
+}
+
+.navbar-start {
+  flex-direction: column;
+  justify-content: center !important;
+}
+
+//Menu overrides
+$menu-item-hover-color: $black !important;
+$menu-item-hover-background-color: $black;
+$menu-item-active-color: $drank-blue;
+$menu-item-active-background-color:	$drank-blue;
+$menu-list-border-left: 1px solid $drank-blue;
+
+
+.menu-label {
+  font-size: 1em !important;
+  text-align: left;
+}
+.menu-list {
+  list-style: none !important;
+  text-align: left;
+}
+.social {
+  padding: 2em;
+}
+.social a {
+    padding: .5em .5em .3em .5em;
+    border-radius: 1em;
+    margin: .5em;
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    display: inline;
+}
+
+// blog roll
+.blog-list-item.is-featured {
+  background-color: #d6400033;
+}
+.blog-list-item header {
+  display: flex;
+  margin-bottom: 1em;
+}
+.blog-list-item .featured-thumbnail {
+  flex-basis: 35%;
+  margin: 0 1.5em 0 0;
+}

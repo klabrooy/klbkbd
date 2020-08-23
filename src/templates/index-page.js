@@ -7,7 +7,7 @@ import { graphql } from 'gatsby'
 export const IndexPageTemplate = ({
   image
 }) => (
-  <div>
+  <div className='container'>
     <PreviewCompatibleImage imageInfo={image} />
   </div>
 )
