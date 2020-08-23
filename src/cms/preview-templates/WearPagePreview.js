@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import React from 'react'
 import { WearPageTemplate } from '../../templates/wear-page'
 
-const WearPagePreview = ({ entry, getAsset }) => {
+const WearPagePreview = ({ entry }) => {
   const entryBlurbs = entry.getIn(['data', 'blurbs'])
   const blurbs = entryBlurbs ? entryBlurbs.toJS() : []
   return (
