@@ -6,24 +6,22 @@ import { graphql } from 'gatsby'
 
 export const WearPageTemplate = ({ blurbs }) => {
   return (
-    <section className="section section--gradient">
+    <section>
       <div className="container">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <div className="section">
-              {
-                blurbs.map((blurb) => (
-                  <div id={blurb.title}>
-                    <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                      {blurb.title}
-                    </h2>
-                    <div>{blurb.description}</div>
-                    <PreviewCompatibleImage imageInfo={blurb.image} />
-                  </div>
-                ))
-              }
-            </div>
-          </div>
+        <div className="section">
+          {
+            blurbs.map((blurb) => (
+              <div id={blurb.title}>
+                <PreviewCompatibleImage imageInfo={blurb.image} />
+                <div className='wear_caption'>
+                  <h2>
+                    {blurb.title}
+                  </h2>
+                  <p>{blurb.description}</p>
+                </div>
+              </div>
+            ))
+          }
         </div>
       </div>
     </section>
