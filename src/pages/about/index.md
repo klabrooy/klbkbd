@@ -3,7 +3,7 @@ templateKey: about-page
 path: /about
 title: About
 ---
-Drank Oceanic aka Natalie Tarle is a Melbourne based designer primarily focussed on fashion and digital representations of it.\
+Natalie Tarle is a Melbourne based designer primarily focussed on fashion and digital representations of it.\
 \
 Her interests include (but are not limited to) garment design and contruction, illustration, photography and content creation.\
 \
