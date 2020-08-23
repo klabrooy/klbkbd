@@ -27,7 +27,7 @@ blurbs:
     title: Fountain Body
     description: "Stretch bodysuit with allover print. Looser upper with a fitted short. "
   - date: 2020-08-23T07:09:08.480Z
-    image: /img/seventeenb.jpg
+    image: /img/screen-shot-2020-08-23-at-4.44.33-pm.png
     title: In The Summer Mini
     description: "Printed shift dress featuring sights from the Almafi Coast,
       Santorini and Mljet. Stiff cowl at front. Low cut back. "
