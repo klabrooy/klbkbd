@@ -45,4 +45,13 @@ blurbs:
     title: Supporter Track Set
     description: "Printed scuba track jacket and pants. Zip closure on jacket.
       Drawstring waistband on pants. "
+  - date: 2020-08-24T06:41:31.314Z
+    image: /img/cheng-44.jpg
+    title: Holy Robe
+    description: "Hotel style dressing gown. White terry towelling. Hand embroidered
+      island motif on back. "
+  - date: 2020-08-24T06:51:32.237Z
+    image: /img/three.jpg
+    title: Spliced Mini
+    description: "Bodycon mini dress. Contrast panels back and front. "
 ---
