@@ -13,4 +13,8 @@ blurbs:
     image: /img/117819859_2770662019700192_8789667718290437950_n.jpg
     title: Kid Drank Project Two
     description: "Upcycled sportswear, made from team kits / jerseys. "
+  - date: 2020-08-24T06:54:22.355Z
+    image: /img/img_3882.png
+    title: Outfit 4
+    description: "'Declined' runway shot by studio.kit"
 ---
