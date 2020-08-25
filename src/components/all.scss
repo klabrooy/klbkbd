@@ -45,7 +45,7 @@ html {
 
 a {
   text-decoration: none;
-  color: $drank-blue;
+  color: $black;
   &:visited {
     color: $black
   }
@@ -57,6 +57,7 @@ a {
 button {
   cursor: pointer;
   font-family: $font-accent;
+  font-size: 18px;
   background-color: $drank-blue;
   color: $drank-blue-invert;
   border: 1px solid $drank-blue;
@@ -73,8 +74,8 @@ button {
 }
 
 .layout-root {              
-  height: calc(100vh - 32px);
-  margin: 16px;
+  height: calc(100vh - 64px);
+  margin: 32px;
   justify-content: center;
   @include tablet() {
     flex-direction: row;
@@ -92,6 +93,9 @@ button {
   flex: 1 1 0;
   display: flex;
   margin-top: 16px;
+  section {
+    flex: 1 1 0;
+  }
   @include tablet() {
     margin-top: 0;
     section {
@@ -118,24 +122,82 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &.container {
+    text-align: center;
+  }
+
+  &_logo {
+    max-width: 150px;
+    padding: 16px;
+    @include tablet() {
+      max-width: 300px;
+      padding: 0;
+    }
+    @include desktop() {
+      max-width: 300px;
+      padding: 0;
+    }
+  }
+
   &_content {
     height: fit-content;
     position: relative;
     display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
+    @include tablet() {
+      flex-direction: row;
+    }
+    @include desktop(){
+      flex-direction: row;
+    }
   }
   &_menu {
     display: flex;
-    align-items: flex-end;
-    width: 70px;
-    margin-left: 16px;
+    width: 100vw;
+
+    @include tablet() {
+      width: 70px;
+      margin-left: 16px;
+      align-items: flex-end;
+      text-align: left;
+    }
+
+    @include desktop() {
+      width: 70px;
+      margin-left: 16px;
+      align-items: flex-end;
+      text-align: left;
+    }
+
     div {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-evenly;
+      padding: 0 16px 16px 16px;
+      flex-wrap: wrap;
+
+      @include tablet() {
+        flex-direction: column;
+        padding: 0;
+      }
+  
+      @include desktop() {
+        flex-direction: column;
+        padding: 0;
+      }
     }
   }
+
+  &_item {
+    margin: 8px;
+    font-size: 18px;
+  }
+
   &_item.active {
     font-family: $font-accent;
+    font-size: 16px;
   }
 }
 
@@ -169,10 +231,22 @@ button {
       .control {
         width: 100%;
         input {
-          width: 100%
+          margin-top: 8px;
+          width: 100%;
+          box-sizing: border-box;
+          font-family: $font-body;
+          font-size: 16px;
+          padding: 8px;
         }
         textarea {
-          width: 100%
+          margin-top: 8px;
+          width: 100%;
+          resize: none;
+          box-sizing: border-box;
+          height: 150px;
+          font-family: $font-body;
+          font-size: 16px;
+          padding: 8px;
         }
       }
     }

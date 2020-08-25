@@ -5,7 +5,6 @@ import React from 'react'
 import { graphql } from 'gatsby'
 
 export const ExplorePageTemplate = ({ blurbs }) => {
-  console.log(blurbs)
   return (
     <section className="section section--gradient">
       <div className="container">

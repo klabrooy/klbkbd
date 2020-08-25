@@ -12,7 +12,7 @@ export const WearPageTemplate = ({ blurbs }) => {
           {
             blurbs.map((blurb) => (
               <div id={blurb.title}>
-                <PreviewCompatibleImage imageInfo={blurb.image} />
+                <PreviewCompatibleImage imageInfo={blurb.image}/>
                 <div className='wear_caption'>
                   <h2>
                     {blurb.title}
