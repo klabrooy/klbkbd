@@ -11,9 +11,10 @@ $body-color: #000000;
 $black: #000000;
 $tablet-width: 768px;
 $desktop-width: 1024px;
-
-$font-body: 'Roboto', sans-serif;
-$font-accent: 'Noto Serif', serif;
+$font-body: 'Roboto',
+sans-serif;
+$font-accent: 'Noto Serif',
+serif;
 
 @mixin tablet {
   @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
@@ -31,6 +32,7 @@ $font-accent: 'Noto Serif', serif;
   &::-webkit-scrollbar {
     width: 5px !important;
   }
+
   &::-webkit-scrollbar-thumb {
     background-color: $drank-blue !important
   }
@@ -38,6 +40,7 @@ $font-accent: 'Noto Serif', serif;
 
 html {
   font-family: $font-body;
+
   body {
     margin: 0
   }
@@ -46,9 +49,11 @@ html {
 a {
   text-decoration: none;
   color: $black;
+
   &:visited {
     color: $black
   }
+
   &:hover {
     color: $drank-blue
   }
@@ -63,6 +68,8 @@ button {
   border: 1px solid $drank-blue;
   padding: 6px 24px;
   border-radius: 6px;
+  transition: all .15s ease;
+
   &:hover {
     background-color: $drank-blue-invert;
     color: $drank-blue
@@ -73,14 +80,22 @@ button {
   flex: 1 1 0
 }
 
-.layout-root {              
+.container.image {
+  > div {
+    max-height: calc(100vh - 64px);
+  }
+}
+
+.layout-root {
   height: calc(100vh - 64px);
   margin: 32px;
   justify-content: center;
+
   @include tablet() {
     flex-direction: row;
     display: flex;
   }
+
   @include desktop() {
     flex-direction: row;
     display: flex;
@@ -93,11 +108,14 @@ button {
   flex: 1 1 0;
   display: flex;
   margin-top: 16px;
+
   section {
     flex: 1 1 0;
   }
+
   @include tablet() {
     margin-top: 0;
+
     section {
       max-height: 100vh;
       overflow-y: auto;
@@ -106,8 +124,10 @@ button {
       @include scrollbar()
     }
   }
+
   @include desktop() {
     margin-top: 0;
+
     section {
       max-height: 100vh;
       overflow-y: auto;
@@ -130,10 +150,12 @@ button {
   &_logo {
     max-width: 150px;
     padding: 16px;
+
     @include tablet() {
       max-width: 300px;
       padding: 0;
     }
+
     @include desktop() {
       max-width: 300px;
       padding: 0;
@@ -145,13 +167,16 @@ button {
     position: relative;
     display: flex;
     flex-direction: column-reverse;
+
     @include tablet() {
       flex-direction: row;
     }
-    @include desktop(){
+
+    @include desktop() {
       flex-direction: row;
     }
   }
+
   &_menu {
     display: flex;
     width: 100vw;
@@ -182,7 +207,7 @@ button {
         flex-direction: column;
         padding: 0;
       }
-  
+
       @include desktop() {
         flex-direction: column;
         padding: 0;
@@ -209,6 +234,7 @@ button {
       font-style: italic;
       margin: 16px 0;
     }
+
     p {
       max-width: 250px;
       font-size: 14px;
@@ -221,15 +247,19 @@ button {
 .contact-form {
   form {
     width: 100%;
+
     .field {
       margin-top: 16px;
       width: 100%;
       max-width: 400px;
+
       label {
         width: 100%
       }
+
       .control {
         width: 100%;
+
         input {
           margin-top: 8px;
           width: 100%;
@@ -238,6 +268,7 @@ button {
           font-size: 16px;
           padding: 8px;
         }
+
         textarea {
           margin-top: 8px;
           width: 100%;
@@ -263,6 +294,7 @@ button {
   flex-wrap: wrap;
   justify-content: left;
   align-items: center;
+
   li {
     padding: 0 2rem 1rem 0;
     margin-bottom: 1.5rem;
@@ -286,31 +318,13 @@ button {
 }
 
 .full-width-image {
-    width: 100vw;
-    height: 400px;
-    background-size: cover;
-    background-position: bottom;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.btn {
-    display: inline-block;
-    padding: 12px 16px 10px;
-    font-size: 18px;
-    font-size: 1rem;
-    line-height: 1.25;
-    background-color: #fff;
-    border-radius: .25rem;
-    text-decoration: none;
-    font-weight: 700;
-    color: $drank-blue;
-    text-align: center;
-    -webkit-box-shadow: inset 0 0 0 2px $drank-blue;
-    box-shadow: inset 0 0 0 2px $drank-blue;
-    -webkit-transition: all .15s ease;
-    transition: all .15s ease;
+  width: 100vw;
+  height: 400px;
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .margin-top-0 {
@@ -318,69 +332,19 @@ button {
 }
 
 .navbar-item .icon {
-  color: $primary
-// Override for use of svg's from https://simpleicons.org/
+  color: $primary // Override for use of svg's from https://simpleicons.org/
 }
+
 .icon svg {
   width: 1.5rem;
   height: 1.5rem;
   fill: currentColor;
 }
+
 .navbar-brand .navbar-item.logo {
   padding: 0 1rem;
-}
-footer.footer {
-  padding: 3rem 0rem 0rem;
-  background-color: transparent;
 }
 
 .navbar-item img {
   max-height: none !important;
-}
-
-.navbar-start {
-  flex-direction: column;
-  justify-content: center !important;
-}
-
-//Menu overrides
-$menu-item-hover-color: $black !important;
-$menu-item-hover-background-color: $black;
-$menu-item-active-color: $drank-blue;
-$menu-item-active-background-color:	$drank-blue;
-$menu-list-border-left: 1px solid $drank-blue;
-
-
-.menu-label {
-  font-size: 1em !important;
-  text-align: left;
-}
-.menu-list {
-  list-style: none !important;
-  text-align: left;
-}
-.social {
-  padding: 2em;
-}
-.social a {
-    padding: .5em .5em .3em .5em;
-    border-radius: 1em;
-    margin: .5em;
-    width: 1em;
-    height: 1em;
-    vertical-align: middle;
-    display: inline;
-}
-
-// blog roll
-.blog-list-item.is-featured {
-  background-color: #d6400033;
-}
-.blog-list-item header {
-  display: flex;
-  margin-bottom: 1em;
-}
-.blog-list-item .featured-thumbnail {
-  flex-basis: 35%;
-  margin: 0 1.5em 0 0;
 }
