@@ -11,7 +11,7 @@ export const WearPageTemplate = ({ blurbs }) => {
         <div className="section">
           {
             blurbs.map((blurb) => (
-              <div id={blurb.title}>
+              <div key={blurb.title} id={blurb.title}>
                 <PreviewCompatibleImage imageInfo={blurb.image}/>
                 <div className='wear_caption'>
                   <h2>
@@ -61,7 +61,7 @@ export const wearPageQuery = graphql`
         blurbs {
           image {
             childImageSharp {
-              fluid(maxWidth: 2048, quality: 100) {
+              fluid(maxWidth: 1080, quality: 100) {
                 ...GatsbyImageSharpFluid
               }
             }
