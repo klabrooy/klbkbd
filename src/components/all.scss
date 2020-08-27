@@ -81,7 +81,7 @@ button {
 }
 
 .container.image {
-  > div {
+  >div {
     max-height: calc(100vh - 64px);
   }
 }
@@ -223,10 +223,12 @@ button {
   &_item.active {
     font-weight: 700;
     color: $drank-blue;
+
     @include tablet () {
       font-family: $font-accent;
       color: $black
     }
+
     @include desktop() {
       font-family: $font-accent;
       color: $black
