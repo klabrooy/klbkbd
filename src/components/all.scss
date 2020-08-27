@@ -221,8 +221,16 @@ button {
   }
 
   &_item.active {
-    font-family: $font-accent;
-    font-size: 16px;
+    font-weight: 700;
+    color: $drank-blue;
+    @include tablet () {
+      font-family: $font-accent;
+      color: $black
+    }
+    @include desktop() {
+      font-family: $font-accent;
+      color: $black
+    }
   }
 }
 
