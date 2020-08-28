@@ -1,4 +1,4 @@
 ---
 templateKey: index-page
-image: /img/sun-hoodie.png
+image: /img/klbkbd-036.jpg
 ---
