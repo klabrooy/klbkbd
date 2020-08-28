@@ -3,12 +3,8 @@ templateKey: about-page
 path: /about
 title: About
 ---
-Natalie Tarle is a Melbourne based designer primarily focussed on fashion and digital representations of it.\
+klb is a Software Engineer and keyboard enthusiast based in Melbourne, Australia.\
 \
-Her interests include (but are not limited to) garment design and contruction, illustration, photography and content creation.\
+Her instagram can be found [@kldkbd](https://www.instagram.com/klbkbd/).\
 \
-Her collaborative project ‘Kid Drank’ can be found [@kid___drank](https://www.instagram.com/kid___drank/).\
-\
-Instagram, Vimeo can be found [@drankoceanic](https://www.instagram.com/drankoceanic/).\
-\
-To contact, click [here](https://www.drankoceanic.com/contact).
+To enquire about or order a service, click [here](https://www.klbkbd.com/contact).

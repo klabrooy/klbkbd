@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'drankoceanic',
+    title: 'klbkbd',
     description:
-      'Drank Oceanic aka Natalie Tarle is a Melbourne based designer primarily focussed on fashion and digital representations of it',
+      'Luxury mechanical keyboard services, including switch modding, keyboard assembly & disassembly. Based in Melbourne, Australia',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
