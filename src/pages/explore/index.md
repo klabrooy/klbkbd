@@ -18,4 +18,8 @@ blurbs:
     image: /img/img_2090.jpg
     title: Switch modding tools
     description: Krytox lubricants, brush, acrylic switch tester
+  - date: 2020-08-28T11:06:33.365Z
+    image: /img/frame-1-1-.png
+    title: "[klb] logo"
+    description: Branding
 ---
