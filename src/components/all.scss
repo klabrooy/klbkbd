@@ -51,6 +51,16 @@ html {
   }
 }
 
+.content {
+  &.services {
+    font-size: 10px;
+    text-align: left;
+    @include tabletUp() {
+      font-size: 16px;
+    }
+  }
+}
+
 a {
   text-decoration: none;
   color: $body-color;
@@ -163,29 +173,41 @@ button {
   }
 
   &_logo {
-    padding: 32px;
-    max-width: 100px;
+    img {
+      padding: 32px;
+      max-width: 100px;
+    }
 
     &.scroll {
-      max-width: 50px;
-      opacity: 1;
+      img {
+        max-width: 50px;
+        opacity: 1;
+      }
 
       &.hide {
-        opacity: 0.1;
         pointer-events: none;
+        img {
+          opacity: 0.1;
+        }
       }
     }
 
     @include tabletUp() {
-      max-width: 130px;
-      padding: 0;
+      img {
+        max-width: 130px;
+        padding: 0;
+      }
 
       &.scroll {
-        max-width: 100px;
-        opacity: 1;
+        img {
+          max-width: 100px;
+          opacity: 1;
+        }
 
         &.hide {
-          opacity: 1;
+          img {
+            opacity: 1;
+          }
         }
       }
     }

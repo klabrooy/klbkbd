@@ -36,9 +36,9 @@ const Navbar = () => {
           <img src={menu} className={`nav_mobile-menu-icon ${mobileMenuOpen ? 'hide' : ''}`} onClick={() => toggleMobileMenuOpen(!mobileMenuOpen)} />
           <img src={close} className={`nav_mobile-close-icon ${!mobileMenuOpen ? 'hide' : ''}`} onClick={() => toggleMobileMenuOpen(!mobileMenuOpen)} />
         </div>
-        <div id="nav-logo" className='container'>
+        <div id="nav-logo" className={`container nav_logo ${scroll ? 'scroll' : ''} ${!mobileMenuOpen ? 'hide' : ''}`}>
           <Link to="/" className="nav_item" title="Logo">
-            <img src={logo} alt="klbkbd logo" className={`nav_logo ${scroll ? 'scroll' : ''} ${!mobileMenuOpen ? 'hide' : ''}`} />
+            <img src={logo} alt="klbkbd logo" className='nav_logo_image' />
           </Link>
         </div>
         <div
