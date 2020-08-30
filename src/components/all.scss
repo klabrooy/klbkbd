@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,700');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 //$kbd: #344B50;
 $kbd: #FF7E30;
 $kbd-invert: #fff;
@@ -12,10 +9,8 @@ $primary-invert: $kbd-invert;
 $body-color: #503934;
 $tablet-width: 768px;
 $desktop-width: 1024px;
-$font-body: 'Roboto',
+$font-body: 'Lato',
 sans-serif;
-$font-accent: 'Noto Serif',
-serif;
 
 @mixin tablet {
   @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
@@ -99,22 +94,25 @@ button {
 }
 
 .layout-root {
-  height: calc(100vh - 64px);
   margin: 32px;
   justify-content: center;
 
   @include tabletUp() {
     flex-direction: row;
     display: flex;
+    height: calc(100vh - 64px);
   }
 }
 
 .layout-child-root {
-  justify-content: center;
-  align-items: center;
   flex: 1 1 0;
-  display: flex;
   margin-top: 16px;
+
+  @include tabletUp() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   section {
     flex: 1 1 0;
@@ -135,8 +133,29 @@ button {
 
 .nav {
   display: flex;
-  align-items: center;
   justify-content: center;
+  position: sticky;
+  top: 32px;
+  z-index: 1;
+
+  @include tabletUp() {
+    align-items: center;
+    &.open {
+      height: 100%;
+      margin: 0px;
+      padding-top: 0px;
+      background-color: unset;
+      top: unset;
+    }
+  }
+
+  &.open {
+    height: calc(100vh - 32px);
+    margin: -32px;
+    padding-top: 32px;
+    background-color: $kbd-bg;
+    top: 0;
+  }
 
   &.container {
     text-align: center;
@@ -153,24 +172,50 @@ button {
   }
 
   &_content {
-    height: fit-content;
-    position: relative;
-    display: flex;
-    flex-direction: column-reverse;
-
     @include tabletUp() {
+      display: flex;
       flex-direction: row;
+    }
+  }
+
+  &_mobile {
+    &_wrapper {
+      @include tabletUp() {
+        display: none;
+      }
+    }
+
+    &-menu-icon {
+      width: 48px;
+      &.hide {
+        display: none;
+      }
+    }
+
+    &-close-icon {
+      width: 48px;
+      &.hide {
+        display: none;
+      }
     }
   }
 
   &_menu {
     display: flex;
-    width: 100vw;
-    margin-top: -32px;
-    background-color: white;
+
+    &.hide {
+      display: none;
+    }
+
+    display: flex;
+    width: 100%;
 
     @include tabletUp() {
-      width: 70px;
+      &.hide {
+        display: flex;
+      }
+
+      max-width: fit-content;
       margin-left: 16px;
       align-items: flex-end;
       text-align: left;
@@ -181,11 +226,11 @@ button {
 
     div {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       width: 100%;
       justify-content: space-evenly;
       padding: 16px;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
 
       @include tabletUp() {
         flex-direction: column;
@@ -195,30 +240,20 @@ button {
   }
 
   &_item {
-    margin: 4px 8px;
-    font-size: 18px;
-
-    &:last-child {
-      margin-right: 0
-    }
-
-    &:first-child {
-      margin-left: 0
-    }
+    margin: 18px 0px;
+    font-size: 48px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 2px;
 
     @include tabletUp() {
-      &:last-child {
-        margin-right: 8px
-      }
-
-      &:first-child {
-        margin-left: 8px
-      }
+      margin: 6px;
+      font-size: 16px;
+      font-weight: 400;
     }
   }
 
   &_item.active {
-    font-weight: 700;
     color: $kbd;
   }
 }
@@ -344,4 +379,38 @@ button {
 
 .navbar-item img {
   max-height: none !important;
+}
+
+.footer {
+  padding-top: 32px;
+  display: block;
+
+  @include tabletUp() {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%)
+  }
+
+  &_content {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 0;
+    justify-content: center;
+  }
+
+  &_item {
+    width: 42px;
+    margin: 0 4px;
+    @include tabletUp() {
+      width: 24px
+    }
+
+    img {
+      width: 42px;
+      @include tabletUp() {
+        width: 24px
+      }
+    }
+  }
 }

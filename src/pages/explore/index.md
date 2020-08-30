@@ -8,11 +8,11 @@ blurbs:
       Krytox 105 Oil. Filmed with TX Keyboard films
   - date: 2020-08-28T10:39:25.643Z
     image: /img/klbkbd-063.jpg
-    title: C3 Equalz Tangerine 67g v2
+    title: C3Equalz Tangerine 67g v2
     description: Stock
   - date: 2020-08-28T10:53:26.387Z
     image: /img/klbkbd-049.jpg
-    title: Nike Dunk Low Off-White Pine Green x C3 Equalz Tangerine Switch
+    title: Nike Dunk Low Off-White Pine Green x C3Equalz Tangerine Switch
     description: Creative shoot
   - date: 2020-08-28T10:42:06.330Z
     image: /img/img_2090.jpg
