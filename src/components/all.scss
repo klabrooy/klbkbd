@@ -140,6 +140,7 @@ button {
 
   @include tabletUp() {
     align-items: center;
+
     &.open {
       height: 100%;
       margin: 0px;
@@ -165,9 +166,27 @@ button {
     padding: 32px;
     max-width: 100px;
 
+    &.scroll {
+      max-width: 50px;
+      opacity: 1;
+
+      &.hide {
+        opacity: 0.1;
+      }
+    }
+
     @include tabletUp() {
       max-width: 130px;
       padding: 0;
+
+      &.scroll {
+        max-width: 100px;
+        opacity: 1;
+
+        &.hide {
+          opacity: 1;
+        }
+      }
     }
   }
 
@@ -187,6 +206,7 @@ button {
 
     &-menu-icon {
       width: 48px;
+
       &.hide {
         display: none;
       }
@@ -194,6 +214,7 @@ button {
 
     &-close-icon {
       width: 48px;
+
       &.hide {
         display: none;
       }
@@ -240,7 +261,7 @@ button {
   }
 
   &_item {
-    margin: 18px 0px;
+    margin: 8px 0px;
     font-size: 48px;
     text-transform: uppercase;
     font-weight: 400;
@@ -402,12 +423,14 @@ button {
   &_item {
     width: 42px;
     margin: 0 4px;
+
     @include tabletUp() {
       width: 24px
     }
 
     img {
       width: 42px;
+
       @include tabletUp() {
         width: 24px
       }

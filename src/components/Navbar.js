@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 
 import { Link } from 'gatsby'
 import close from '../img/close-24px.svg'
@@ -7,6 +7,23 @@ import menu from '../img/menu-24px.svg'
 
 const Navbar = () => {
     const [mobileMenuOpen, toggleMobileMenuOpen] = useState(false);
+    const [scroll, setScroll] = useState(false);
+
+
+    const handleScroll = () => {
+      if (window.scrollY > 100 && !scroll) {
+        setScroll(true)
+      }
+      if (window.scrollY === 0) {
+        setScroll(false)
+      }
+    }
+
+    useEffect(() => {
+      if (typeof window === 'undefined') return;
+      window.addEventListener('scroll', handleScroll);
+   }, []);
+
     return (
       <nav
         id='nav'
@@ -21,7 +38,7 @@ const Navbar = () => {
           </div>
           <div id="nav-logo" className='container'>
             <Link to="/" className="nav_item" title="Logo">
-              <img src={logo} alt="klbkbd logo" className='nav_logo' />
+              <img src={logo} alt="klbkbd logo" className={`nav_logo ${scroll ? 'scroll' : ''} ${!mobileMenuOpen ? 'hide': ''}`} />
             </Link>
           </div>
           <div
