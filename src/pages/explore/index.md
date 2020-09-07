@@ -2,7 +2,7 @@
 templateKey: explore-page
 blurbs:
   - date: 2020-09-07T10:23:28.337Z
-    image: /img/klbkbd-173.jpg
+    image: /img/klbkbd-158.jpg
     title: Tofu 65 build
     description: KBDFans Tofu 65 (E-White), KBD67 rev2 pcb and foam, Keyreative ABS
       blanks keycaps (Ultramarine), Gateron Ink Black v2 switches lubed with
