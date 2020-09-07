@@ -11,12 +11,14 @@ Each switch is modded with the finest attention to detail
 
 Switches `klb` has on hand can be found below or of course you may send your own switches in
 
+If there are specific switches you are looking for `klb` may be able to source these for you
+
 ---
 
 | `Service prices`       |                        |                        |
 | -------------------- | ---------------------- | ---------------------- |
-| `Switch lubing`        | `00.60 (lube provided)`  | `00.50 (lube supplied)`  |
-| `Switch filming`       | `00.10 (films provided)` | `00.05 (films supplied)` |
+| `Switch lubing`        | `00.50 (lube supplied)`  | `00.55 (lube provided)`  |
+| `Switch filming`       | `00.05 (films supplied)` | `00.10 (films provided)` |
 | `Keyboard assembly`    | `30.00 (Build <= 65%)`   | `40.00 (Build > 65%)`    |
 | `Keyboard photography` | `Free with service`      |                        |
 | `Part picking`         | `Free`                   |                        |
