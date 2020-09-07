@@ -13,20 +13,20 @@ Switches `klb` has on hand can be found below or of course you may send your own
 
 ---
 
-| Service prices       |                        |                        |
+| `Service prices`       |                        |                        |
 | -------------------- | ---------------------- | ---------------------- |
-| Switch lubing        | 00.60 (lube provided)  | 00.50 (lube supplied)  |
-| Switch filming       | 00.10 (films provided) | 00.05 (films supplied) |
-| Keyboard assembly    | 30.00 (Build <= 65%)   | 40.00 (Build > 65%)    |
-| Keyboard photography | Free with service      |                        |
-| Part picking         | Free                   |                        |
-| Part sourcing        | Enquire                |                        |
+| `Switch lubing`        | `00.60 (lube provided)`  | `00.50 (lube supplied)`  |
+| `Switch filming`       | `00.10 (films provided)` | `00.05 (films supplied)` |
+| `Keyboard assembly`    | `30.00 (Build <= 65%)`   | `40.00 (Build > 65%)`    |
+| `Keyboard photography` | `Free with service`      |                        |
+| `Part picking`         | `Free`                   |                        |
+| `Part sourcing`        | `Enquire`                |                        |
 
 ---
 
-| In stock switches |
+| `In stock switches` |
 |-|
-| Gateron milky yellow 50g linear switch |
+| `Gateron milky yellow 50g linear switch` |
 
 ---
 
