@@ -30,6 +30,19 @@ Switches `klb` has on hand can be found below or of course you may send your own
 
 ---
 
+| `Lubricants for services` |
+|-|
+| `Krytox GPL 205g0` |
+| `Krytox GPL 105 oil` |
+
+---
+
+| `Switch gap films for services` |
+|-|
+| `TX Keyboards Switch Films` |
+
+---
+
 **Prices in AUD*
 
 **Switch modding price is per switch*
