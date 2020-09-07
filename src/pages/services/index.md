@@ -7,7 +7,7 @@ title: Services
 
 klb offers a range of mechanical keyboard services including switch modding.
 
-Each switch will be modded with the finest attention to detail.
+Each switch is modded with the finest attention to detail.
 
 | Service prices       |                        |                        |
 | -------------------- | ---------------------- | ---------------------- |
