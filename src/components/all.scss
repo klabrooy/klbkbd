@@ -180,20 +180,12 @@ button {
   &_logo {
     img {
       padding: 32px;
-      max-width: 100px;
+      max-width: 90px;
     }
 
     &.scroll {
-      img {
-        max-width: 50px;
-        opacity: 1;
-      }
-
       &.hide {
-        pointer-events: none;
-        img {
-          opacity: 0.1;
-        }
+        display: none;
       }
     }
 
