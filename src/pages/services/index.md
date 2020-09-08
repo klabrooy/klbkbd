@@ -17,8 +17,8 @@ If there are specific switches you are looking for `klb` may be able to source t
 
 | `Service prices`       |                        |                        |
 | -------------------- | ---------------------- | ---------------------- |
-| `Switch lubing`        | `00.50 (lube supplied)`  | `00.55 (lube provided)`  |
-| `Switch filming`       | `00.05 (films supplied)` | `00.10 (films provided)` |
+| `Switch lubing`        | `00.50 (lube provided)`  | `00.55 (lube supplied)`  |
+| `Switch filming`       | `00.05 (films provided)` | `00.10 (films supplied)` |
 | `Keyboard assembly`    | `30.00 (size <= 65%)`   | `40.00 (size > 65%)`    |
 | `Part sourcing`        | `Enquire`                |                        |
 
@@ -42,7 +42,11 @@ If there are specific switches you are looking for `klb` may be able to source t
 | `TX Keyboards Switch Films` |
 
 ---
-
+\
 **Prices in AUD*
 
 **Switch modding price is per switch*
+
+*`provided` refers to materials provided by client
+
+*`supplied` refers to materials supplied by `klb`
