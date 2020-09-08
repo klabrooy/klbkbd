@@ -49,6 +49,11 @@ html {
   body {
     margin: 0
   }
+
+  h1 {
+    text-transform: uppercase;
+    font-weight: 400;
+  }
 }
 
 .content {
@@ -328,6 +333,13 @@ button {
       margin-top: 16px;
       width: 100%;
       max-width: 400px;
+
+      fieldset {
+        margin: 0;
+        div {
+          margin: 4px
+        }
+      }
 
       label {
         width: 100%

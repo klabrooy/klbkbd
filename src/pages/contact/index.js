@@ -87,6 +87,52 @@ export default class Index extends React.Component {
                   </div>
                 </div>
                 <div className="field">
+                  <label className="label" htmlFor={'instantMessaging'}>
+                    Preffered communication platform and username (recommended, for speedy communication)
+                  </label>
+                  <div className="control">
+                    <input
+                      className="input"
+                      type={'instantMessaging'}
+                      name={'instantMessaging'}
+                      onChange={this.handleChange}
+                      id={'instantMessaging'}
+                      required={false}
+                      placeholder='[reddit / discord / instagram]: [your username]'
+                    />
+                  </div>
+                </div>
+                <div className='field'>
+                  <fieldset >
+                    <legend>Please select one or more message subjects</legend>
+                    <div>
+                      <input type='checkbox' id='switchLubing' name='switchLubing' onChange={this.handleChange}
+                      />
+                      <label for='switchLubing'>Switch lubing</label>
+                    </div>
+                    <div>
+                      <input type='checkbox' id='switchFilming' name='switchFilming' onChange={this.handleChange}
+                      />
+                      <label for='switchFilming'>Switch filming</label>
+                    </div>
+                    <div>
+                      <input type='checkbox' id='partSourcing' name='partSourcing' onChange={this.handleChange}
+                      />
+                      <label for='partSourcing'>Part sourcing</label>
+                    </div>
+                    <div>
+                      <input type='checkbox' id='keyboardAssembly' name='keyboardAssembly' onChange={this.handleChange}
+                      />
+                      <label for='keyboardAssembly'>Keyboard assembly</label>
+                    </div>
+                    <div>
+                      <input type='checkbox' id='generalEnquiry' name='generalEnquiry' onChange={this.handleChange}
+                      />
+                      <label for='generalEnquiry'>General enquiry</label>
+                    </div>
+                  </fieldset>
+                </div>
+                <div className="field">
                   <label className="label" htmlFor={'message'}>
                     Message
                   </label>
