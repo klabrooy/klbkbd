@@ -5,17 +5,15 @@ title: Services
 ---
 # Mechanical keyboard services
 
-`klb` offers a range of mechanical keyboard services including switch modding
+`klb` offers a range of mechanical keyboard services including switch modding with exceptional attention to detail.
 
-Each switch is modded with the finest attention to detail
+You may send your own switches in for modification or choose from a selection of switches kept on hand.
 
-Switches `klb` has on hand can be found below or of course you may send your own switches in
-
-If there are specific switches you are looking for `klb` may be able to source these for you
+If there are specific switches you are looking for `klb` may be able to source these for you.
 
 ---
 
-| `Service prices`       |                        |                        |
+| `Service prices (AUD)`       |                        |                        |
 | -------------------- | ---------------------- | ---------------------- |
 | `Switch lubing`        | `00.50 (lube provided)`  | `00.55 (lube supplied)`  |
 | `Switch filming`       | `00.05 (films provided)` | `00.10 (films supplied)` |
@@ -43,9 +41,8 @@ If there are specific switches you are looking for `klb` may be able to source t
 
 ---
 \
-**Prices in AUD*
 
-**Switch modding price is per switch*
+*Switch modding price is per switch
 
 *`provided` refers to materials provided by client
 
