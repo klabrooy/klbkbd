@@ -19,7 +19,7 @@ export default class Index extends React.Component {
   }
 
   handleCheckboxChange = (e) => {
-    this.setState({ [e.target.name]: !e.target.value })
+    this.setState({ [e.target.name]: document.getElementById(e.target.name).checked })
   }
 
   handleSubmit = (e) => {
@@ -110,27 +110,27 @@ export default class Index extends React.Component {
                   <fieldset >
                     <legend>Please select one or more message subjects</legend>
                     <div>
-                      <input type='checkbox' id='switchLubing' name='switchLubing' value={false} onChange={this.handleChange}
+                      <input type='checkbox' id='switchLubing' name='switchLubing' value='switchLubing' onChange={this.handleCheckboxChange}
                       />
                       <label for='switchLubing'>Switch lubing</label>
                     </div>
                     <div>
-                      <input type='checkbox' id='switchFilming' name='switchFilming' value={false} onChange={this.handleChange}
+                      <input type='checkbox' id='switchFilming' name='switchFilming' value='switchFilming' onChange={this.handleCheckboxChange}
                       />
                       <label for='switchFilming'>Switch filming</label>
                     </div>
                     <div>
-                      <input type='checkbox' id='partSourcing' name='partSourcing' value={false} onChange={this.handleChange}
+                      <input type='checkbox' id='partSourcing' name='partSourcing' value='partSourcing' onChange={this.handleCheckboxChange}
                       />
                       <label for='partSourcing'>Part sourcing</label>
                     </div>
                     <div>
-                      <input type='checkbox' id='keyboardAssembly' name='keyboardAssembly' value={false} onChange={this.handleChange}
+                      <input type='checkbox' id='keyboardAssembly' name='keyboardAssembly' value='keyboardAssembly' onChange={this.handleCheckboxChange}
                       />
                       <label for='keyboardAssembly'>Keyboard assembly</label>
                     </div>
                     <div>
-                      <input type='checkbox' id='generalEnquiry' name='generalEnquiry' value={false} onChange={this.handleChange}
+                      <input type='checkbox' id='generalEnquiry' name='generalEnquiry' value='generalEnquiry' onChange={this.handleCheckboxChange}
                       />
                       <label for='generalEnquiry'>General enquiry</label>
                     </div>
