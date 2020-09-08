@@ -19,9 +19,7 @@ If there are specific switches you are looking for `klb` may be able to source t
 | -------------------- | ---------------------- | ---------------------- |
 | `Switch lubing`        | `00.50 (lube supplied)`  | `00.55 (lube provided)`  |
 | `Switch filming`       | `00.05 (films supplied)` | `00.10 (films provided)` |
-| `Keyboard assembly`    | `30.00 (Build <= 65%)`   | `40.00 (Build > 65%)`    |
-| `Keyboard photography` | `Free with service`      |                        |
-| `Part picking`         | `Free`                   |                        |
+| `Keyboard assembly`    | `30.00 (size <= 65%)`   | `40.00 (size > 65%)`    |
 | `Part sourcing`        | `Enquire`                |                        |
 
 ---
