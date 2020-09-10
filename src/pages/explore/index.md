@@ -18,7 +18,7 @@ blurbs:
     description: Creative shoot
   - date: 2020-08-28T10:39:25.643Z
     image: /img/klbkbd-063.jpg
-    title: C3Equalz Tangerine 67g v2
+    title: C3Equalz x TKC Tangerine v2 67g
     description: Stock
   - date: 2020-08-28T10:53:26.387Z
     image: /img/klbkbd-049.jpg
