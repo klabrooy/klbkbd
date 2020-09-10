@@ -42,12 +42,12 @@ const TemplateWrapper = ({ children }) => {
         <meta name="theme-color" content="#fff" />
 
         <meta property="og:type" content="business.business" />
-        <meta property="og:description" content={description}/>
+        <meta property="og:description" content={description} />
         <meta property="og:title" content={title} />
         <meta property="og:url" content="/" />
         <meta
           property="og:image"
-          content="https://www.klbkbd.com/static/4f10b070d8cf4ed3e23355bf4d3c7705/a2a79/og-image.jpg"
+          content="https://www.klbkbd.com/img/og-image.jpg"
         />
       </Helmet>
       <Navbar />
